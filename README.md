@@ -26,7 +26,7 @@ $ git clone git://github.com/punkintech/spearphisher.git
 - Change to cloned directory and run `spear.sh` -
 ```
 $ cd spearphisher
-$ bash spear.sh
+$ sudo bash spear.sh
 ```
 
 - On first launch, It'll install the dependencies and that's it. `SpearPhisher` is installed.
