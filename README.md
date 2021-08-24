@@ -48,9 +48,6 @@ $ bash spear.sh
 <h3 align="center">
 :: Workflow ::
 </h3>
-<p align="center">
-<img src=".imgs/wf.gif"/>
-</p>
 
 Forked from Zphisher
 ### Special Thanks :
@@ -59,11 +56,3 @@ Forked from Zphisher
 - [**TheLinuxChoice**](https://twitter.com/linux_choice)
 - [**DarksecDevelopers**](https://github.com/DarksecDevelopers)
 - [**Moises Tapia**](https://github.com/MoisesTapia)
-
-
-### Find Me on :
-<p align="left">
-  <a href="https://github.com/htr-tech" target="_blank"><img src="https://img.shields.io/badge/Github-HTR--TECH-green?style=for-the-badge&logo=github"></a>
-  <a href="https://www.instagram.com/tahmid.rayat" target="_blank"><img src="https://img.shields.io/badge/IG-%40tahmid.rayat-red?style=for-the-badge&logo=instagram"></a>
-  <a href="https://m.me/tahmid.rayat.official" target="_blank"><img src="https://img.shields.io/badge/Chat-Messenger-blue?style=for-the-badge&logo=messenger"></a>
-</p>
