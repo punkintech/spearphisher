@@ -1,6 +1,6 @@
 <!-- SpearPhisher -->
 
-<p align="center">A simple, beginner friendly phishing tool</p>
+<p align="center">A simple, beginner educational phishing tool</p>
 <p align="center">EDUCATION IN ACTION</p>
 
 ##
@@ -46,7 +46,7 @@ $ sudo bash spear.sh
 ##
 
 <h3 align="center">
-:: Workflow ::
+:: Credits ::
 </h3>
 
 Forked from Zphisher
