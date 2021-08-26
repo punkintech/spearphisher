@@ -16,7 +16,6 @@ ${RED}[${WHITE}::${RED}]${BLUE}                     EDUCATION IN ACTION         
 ${RED}[${WHITE}::${RED}]${ORANGE}===================================================================${RED}[${WHITE}::${RED}]
 ${RED}[${WHITE}::${RED}]${WHITE}             STRICTLY FOR EDUCATIONAL USE ONLY                     ${RED}[${WHITE}::${RED}]
 ${RED}[${WHITE}::${RED}]${ORANGE}===================================================================${RED}[${WHITE}::${RED}]      
-${GREEN}[${WHITE}::${GREEN}]${CYAN} Based on zPhisher - created by htr-tech (tahmid.rayat)${WHITE}            ${GREEN}[${WHITE}::${GREEN}]
 	EOF
 }
 
