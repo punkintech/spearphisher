@@ -253,7 +253,7 @@ about() {
 
 	if [[ "$REPLY" == "E" || "$REPLY" == "e" ]]; then
 		msg_exit
-	elif [[ "$REPLY" == "B" || "$REPLY" == "b" ]]; then
+	elif [[ "$REPLY" == "M" || "$REPLY" == "m" ]]; then
 		echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Returning to main menu..."
 		{ sleep 1; main_menu; }
 	else
