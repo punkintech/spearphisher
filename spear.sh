@@ -230,18 +230,22 @@ install_ngrok() {
 
 ## About
 about() {
-	{ clear; banner; echo; }
+	{ clear; banner; banner_small; echo; }
 	cat <<- EOF
-		${GREEN}Author   ${RED}:  ${ORANGE}TAHMID RAYAT ${RED}[ ${ORANGE}HTR-TECH ${RED}]
-		${GREEN}Github   ${RED}:  ${CYAN}https://github.com/htr-tech
-		${GREEN}Social   ${RED}:  ${CYAN}https://linktr.ee/tahmid.rayat
-		${GREEN}Version  ${RED}:  ${ORANGE}2.1
+		
+		${GREEN}       Author   ${RED}:  ${ORANGE}Punkin Tech
+		${GREEN}       Github   ${RED}:  ${CYAN}https://github.com/punkintech
+		${GREEN}       Social   ${RED}:  ${CYAN}https://linktr.ee/PunkinTech
+		${GREEN}       Version  ${RED}:  ${ORANGE}v0.1
 
-		${REDBG}${WHITE} Thanks : Adi1090x,MoisesTapia,ThelinuxChoice
-								  DarkSecDevelopers,Mustakim Ahmed ${RESETBG}
+		${GREEN}       ${ORANGE}:: CREDIT ::
+		${GREEN}       Author   ${RED}:  ${ORANGE}TAHMID RAYAT ${RED}[ ${ORANGE}HTR-TECH ${RED}]
+		${GREEN}       Github   ${RED}:  ${CYAN}https://github.com/htr-tech
+		${GREEN}       Social   ${RED}:  ${CYAN}https://linktr.ee/tahmid.rayat
+		${WHITE}       Thanks : Adi1090x,MoisesTapia,ThelinuxChoice 
+		                DarkSecDevelopers,Mustakim Ahmed
 
-		${RED}[${WHITE}Bb${RED}]${ORANGE} Main Menu
-		${RED}[${WHITE}Ee${RED}]${ORANGE} Exit
+		${RED}[${WHITE}Mm${RED}]${ORANGE} Main Menu   ${RED}[${WHITE}Ee${RED}]${ORANGE} Exit
 
 	EOF
 
