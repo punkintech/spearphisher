@@ -109,43 +109,6 @@ source includes/about.inc
 source .menu/menu.inc
 source .menu/tunnel_menu.inc
 
-## Facebook
-site_facebook() {
-	cat <<- EOF
-
-		${BLUE} Select Facebook page style
-
-		${RED}[${WHITE}01${RED}]${ORANGE} Traditional Login Page
-		${RED}[${WHITE}02${RED}]${ORANGE} Advanced Voting Poll Login Page
-		${RED}[${WHITE}03${RED}]${ORANGE} Fake Security Login Page
-		${RED}[${WHITE}04${RED}]${ORANGE} Facebook Messenger Login Page
-
-	EOF
-
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
-
-	if [[ "$REPLY" == 1 || "$REPLY" == 01 ]]; then
-		website="facebook"
-		mask='http://blue-verified-badge-for-facebook-free'
-		tunnel_menu
-	elif [[ "$REPLY" == 2 || "$REPLY" == 02 ]]; then
-		website="fb_advanced"
-		mask='http://vote-for-the-best-social-media'
-		tunnel_menu
-	elif [[ "$REPLY" == 3 || "$REPLY" == 03 ]]; then
-		website="fb_security"
-		mask='http://make-your-facebook-secured-and-free-from-hackers'
-		tunnel_menu
-	elif [[ "$REPLY" == 4 || "$REPLY" == 04 ]]; then
-		website="fb_messenger"
-		mask='http://get-messenger-premium-features-free'
-		tunnel_menu
-	else
-		echo -ne "\n${RED}[${WHITE}!${RED}]${RED} Invalid Option, Try Again..."
-		{ sleep 1; clear; banner_small; site_facebook; }
-	fi
-}
-
 ## Instagram
 site_instagram() {
 	cat <<- EOF
