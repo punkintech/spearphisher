@@ -4,19 +4,24 @@ menu() {
 	
 	cat <<- EOF
 	${RED}[${WHITE}::${RED}]${ORANGE}===================================================================${RED}[${WHITE}::${RED}]${ORANGE}
-	${RED}[${WHITE}::${RED}]${ORANGE} Select a site attack or ${RED}[${WHITE}Aa${RED}]${ORANGE} About   ${RED}[${WHITE}Ee${RED}]${ORANGE} Exit                    ${RED}[${WHITE}::${RED}]${ORANGE}
+	${RED}[${WHITE}::${RED}]${ORANGE}                          Select Category                          ${RED}[${WHITE}::${RED}]${ORANGE}
 	${RED}[${WHITE}::${RED}]${ORANGE}===================================================================${RED}[${WHITE}::${RED}]${ORANGE}
 
 	EOF
 
-	menu=($(ls .menu))
+	menu=($(ls -l .menu | grep '^d' | awk '{ print $9 }'))
 	for index in "${!menu[@]}"
 	do
-		echo "${RED}[${WHITE}${index}${RED}]${BLUE} ${menu[$index]}"
+		echo " ${RED}[${WHITE}${index}${RED}]${BLUE} ${menu[$index]}"
 	done
+	
+	echo ""
+	echo " ${RED}[${WHITE}Aa${RED}]${ORANGE} About"   
+	echo " ${RED}[${WHITE}Ee${RED}]${ORANGE} Exit"             
+	echo ""
 
 	## Read User Input
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
+	read -p " ${RED}[${WHITE}->${RED}]${GREEN} Select an option : ${BLUE}"
 
 	if [[ "$REPLY" = "A" || "$REPLY" = "a" ]]; then
 		about
@@ -40,22 +45,27 @@ site_menu() {
 
 	cat <<- EOF
 	${RED}[${WHITE}::${RED}]${ORANGE}===================================================================${RED}[${WHITE}::${RED}]${ORANGE}
-	${RED}[${WHITE}::${RED}]${ORANGE}                       $1                                    ${RED}[${WHITE}::${RED}]${ORANGE}
+	${RED}[${WHITE}::${RED}]${ORANGE}                        Select Site                                ${RED}[${WHITE}::${RED}]${ORANGE}
 	${RED}[${WHITE}::${RED}]${ORANGE}===================================================================${RED}[${WHITE}::${RED}]${ORANGE}
-	${RED}[${WHITE}::${RED}]${ORANGE}                 ${RED}[${WHITE}Mm${RED}]${ORANGE} Main Menu   ${RED}[${WHITE}Ee${RED}]${ORANGE} Exit                        ${RED}[${WHITE}::${RED}]${ORANGE}
-	${RED}[${WHITE}::${RED}]${ORANGE}===================================================================${RED}[${WHITE}::${RED}]${ORANGE}
+
+	${WHITE} -- ${RED}$1
 
 	EOF
 	
-	sub_menu=($(ls .menu/"$1"))
+	sub_menu=($(ls -l .menu/"$1" | grep '^d' | awk '{ print $9 }'))
 	
 	for index in "${!sub_menu[@]}"
 	do
-		echo "${RED}[${WHITE}${index}${RED}]${BLUE} ${sub_menu[$index]}"
+		echo " ${RED}[${WHITE}${index}${RED}]${BLUE} ${sub_menu[$index]}"
 	done
 
+	echo ""
+	echo " ${RED}[${WHITE}Mm${RED}]${ORANGE} Back to Main Menu"
+	echo " ${RED}[${WHITE}Ee${RED}]${ORANGE} Exit"
+	echo ""
+
 	## Read User Input
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
+	read -p " ${RED}[${WHITE}->${RED}]${GREEN} Select an option : ${BLUE}"
 
 	if [[ "$REPLY" = "M" || "$REPLY" = "m" ]]; then
 		menu

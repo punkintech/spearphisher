@@ -16,7 +16,6 @@ ${RED}[${WHITE}::${RED}]${BLUE}                     EDUCATION IN ACTION         
 ${RED}[${WHITE}::${RED}]${ORANGE}===================================================================${RED}[${WHITE}::${RED}]
 ${RED}[${WHITE}::${RED}]${WHITE}             STRICTLY FOR EDUCATIONAL USE ONLY                     ${RED}[${WHITE}::${RED}]
 ${RED}[${WHITE}::${RED}]${ORANGE}===================================================================${RED}[${WHITE}::${RED}]      
-${GREEN}[${WHITE}::${GREEN}]${CYAN} Based on zPhisher - created by htr-tech (tahmid.rayat)${WHITE}            ${GREEN}[${WHITE}::${GREEN}]
 	EOF
 }
 
@@ -28,19 +27,19 @@ ${BLUE}   | |                         (_____ \| |   (_)    | |
 ${BLUE}    \ \  ____   ____ ____  ____ _____) | | _  _  ___| | _   ____  ____ 
 ${BLUE}     \ \|  _ \ / _  / _  |/ ___|  ____/| || \| |/___| || \ / _  )/ ___)
 ${BLUE} _____) | | | ( (/ ( ( | | |   | |     | | | | |___ | | | ( (/ /| |    
-${BLUE}(______/| ||_/ \____\_||_|_|   |_|     |_| |_|_(___/|_| |_|\____|_| ${WHITE} v0.1   
+${BLUE}(______/| ||_/ \____\_||_|_|   |_|     |_| |_|_(___/|_| |_|\____|_| ${WHITE} ${VERSION}   
 ${BLUE}        |_|                                                            
 	EOF
 }
 
 ## Exit message
 msg_exit() {
-	{ clear; banner; echo; }
+	{ clear; banner; banner_small; echo; }
 	cat <<- EOF 
 ${GREENBG}${BLACK}
--------------------------------------------------------------------
-               Thank you for using SpearPhisher.                   
--------------------------------------------------------------------
+---------------------------------------------------------------------------
+                   Thank you for using SpearPhisher.                       
+---------------------------------------------------------------------------
 ${RESETBG}
 	EOF
 	{ reset_color; exit 0; }

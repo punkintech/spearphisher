@@ -6,7 +6,7 @@ about() {
 		${GREEN}       Author   ${RED}:  ${ORANGE}Punkin Tech
 		${GREEN}       Github   ${RED}:  ${CYAN}https://github.com/punkintech
 		${GREEN}       Social   ${RED}:  ${CYAN}https://linktr.ee/PunkinTech
-		${GREEN}       Version  ${RED}:  ${ORANGE}v0.1
+		${GREEN}       Version  ${RED}:  ${ORANGE}${VERSION}
 
 		${GREEN}       ${ORANGE}:: CREDIT ::
 		${GREEN}       Author   ${RED}:  ${ORANGE}TAHMID RAYAT ${RED}[ ${ORANGE}HTR-TECH ${RED}]

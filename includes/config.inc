@@ -11,3 +11,5 @@ RESETBG="$(printf '\e[0m\n')"
 
 HOST='127.0.0.1'
 PORT='8080'
+
+VERSION="v1.0"
