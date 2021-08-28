@@ -20,7 +20,7 @@
 
 - Just, Clone this repository -
 ```
-$ git clone git://github.com/punkintech/spearphisher.git
+$ git clone -b v1.0 git://github.com/punkintech/spearphisher.git
 ```
 
 - Change to cloned directory and run `spear.sh` -

